@@ -1,0 +1,173 @@
+@charset 'UTF-8';
+
+:root{
+    --snow: #FCF4F7;
+    --laranja: #F7715D;
+    --amarelo: #FCBF45;
+    --marrom: #594A46;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--snow);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: var(--marrom);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header{
+    height: 80px;
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.309);
+    position: sticky;
+    top: 0px;
+}
+.menu a{
+    margin: 0 30px;
+}
+
+#sign a{
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#sign #sign-in{
+    background-color: var(--laranja);
+    border-radius: 10px;
+}
+
+#sign #sign-up{
+    border: solid 1px var(--laranja);
+    border-radius: 10px;
+}
+#sign-up:hover{
+    background-color: var(--laranja);
+    transition: 0.4s;
+}
+
+#logo{
+    font-size: 1.5em;
+}
+
+
+main {
+    scroll-behavior: smooth;
+}
+
+main div#d01{
+    height: 700px;
+    margin: 0 3vw;
+    background-color: var(--laranja);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#left h1{
+    margin: 10px 30px;
+    padding: 5px;
+    color: white;
+}
+#left h1::after{
+    content: '';
+    background-color: var(--amarelo);
+    width: 250px;
+    height: 1px;
+    margin: 5px 0 0 0;
+    display: block;
+}
+
+#left p{
+    margin: 10px 30px;
+    padding: 5px;
+    color: var(--marrom);
+    max-width: 500px;
+}
+.d01-button{
+    margin: 10px 35px;
+    padding: 15px 25px;
+    background-color: var(--amarelo);
+    border-radius: 10px;
+}
+
+#d01-buttons{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#d01-img{
+    max-height: 480px;
+    min-width: 300px;
+    align-self: flex-end;
+}
+
+footer{
+    background-color: var(--amarelo);
+    text-align: center;
+
+}
+footer p{
+    padding: 5px;
+    font-weight: bold;
+    color: var(--marrom);
+}
+
+#test-grid{
+    height: 300px;
+    background-color: var(--marrom);
+    display: grid;
+    
+}
+
+.test {
+    margin: 30px;
+    padding: 10px;
+    background-color: #e3d9dc;
+    border-radius: 5px;
+}
+
+#test-scroll{
+    margin: 30px;
+    padding: 10px;
+    height: 300px;
+    background-color: var(--marrom);
+    border-radius: 5px;
+    color: white;
+    background-image: url("images/gato.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter:blur(4px);
+}
+
+#test-scroll:hover{
+    filter: none;
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+
+main #parallax{
+    background-image: url('images/gato.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 60vw;
+    height: 300px;
+    box-shadow: inset 0px 2px 9px rgba(0, 0, 0, 0.476);
+    margin: auto;
+    border-radius: 20px;
+}
